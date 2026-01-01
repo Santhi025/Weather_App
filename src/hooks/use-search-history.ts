@@ -18,7 +18,6 @@ export function useSearchHistory() {
     []
   );
   const queryClient = useQueryClient();
-
   const historyQuery = useQuery({
     queryKey: ["search-history"],
     queryFn: () => history,
